@@ -1,0 +1,59 @@
+﻿<Window x:Class="UserBirthday.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UserBirthday"
+        mc:Ignorable="d"
+        Title="Данные дня рождения" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="80"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel>
+            <TextBlock Style="{StaticResource TextBoxStyle}">Введите дату своего рождения и выберите желаемое действие</TextBlock>
+        </StackPanel>
+        <StackPanel Grid.Row="1">
+            <DatePicker Name="DP" Style="{StaticResource DatePickStyle}"></DatePicker>
+            <WrapPanel>
+            <RadioButton Style="{StaticResource RadioButtonStyle}" Click="RadioButtonTime_Click">Сколько времени прошло</RadioButton>
+                <RadioButton Style="{StaticResource RadioButtonStyle}" Click="RadioButtonDayOfWeek_Click">День недели</RadioButton>
+                <RadioButton Style="{StaticResource RadioButtonStyle}" Click="RadioButtonVisokosYear_Click">Високосные года</RadioButton>
+            </WrapPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Visibility="Collapsed" Name="Time">
+            <TextBlock Style="{StaticResource TextBoxStyle}">С момента вашего рождения прошло</TextBlock>
+            <TextBlock Style="{StaticResource DataStyle}">Лет</TextBlock>
+            <TextBlock Name="Years" Style="{StaticResource DataStyle}"></TextBlock>
+            <TextBlock Style="{StaticResource DataStyle}">Месяцев</TextBlock>
+            <TextBlock Name="Months" Style="{StaticResource DataStyle}"></TextBlock>
+            <TextBlock Style="{StaticResource DataStyle}">Дней</TextBlock>
+            <TextBlock Name="Days" Style="{StaticResource DataStyle}"></TextBlock>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Visibility="Collapsed" Name="Time_Button">
+            <Button Style="{StaticResource ButtonStyle}" Click="Count">Рассчитать</Button>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Name="DaysOfWeek" Visibility="Collapsed">
+            <TextBlock Style="{StaticResource TextBoxStyle}">Дни недели</TextBlock>
+            <TextBlock Style="{StaticResource DataStyle}">День недели</TextBlock>
+            <TextBlock Name="DayOfWeek" Style="{StaticResource DataStyle}"></TextBlock>
+            <TextBlock Style="{StaticResource DataStyle}">Количество повторений</TextBlock>
+            <TextBlock Name="CountDayOfWeek" Style="{StaticResource DataStyle}"></TextBlock>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Name="Week_Button" Visibility="Collapsed">
+            <Button Style="{StaticResource ButtonStyle}" Click="DayOfWeekRepeat">Рассчитать</Button>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Name="VisokosYears" Visibility="Collapsed">
+            <TextBlock Style="{StaticResource TextBoxStyle}">Високосные года</TextBlock>
+            <TextBlock Style="{StaticResource DataStyle}">Количество високосных годов</TextBlock>
+            <TextBlock Name="VisokosYear" Style="{StaticResource DataStyle}"></TextBlock>
+        </StackPanel>
+        <WrapPanel Grid.Row="3" Name="Visokos_Button" Visibility="Collapsed">
+            <Button Style="{StaticResource VisokosButtonStyle}" Click="ConkretVisokosYear">Какие года были високосными?</Button>
+            <Button Style="{StaticResource VisokosButtonStyle}" Click="VisokosYearRepeat">Рассчитать</Button>
+        </WrapPanel>
+    </Grid>
+</Window>
