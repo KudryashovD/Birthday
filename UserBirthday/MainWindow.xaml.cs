@@ -42,7 +42,7 @@ namespace UserBirthday
                 { 
             TimeSpan difference = today - date;
             Years.Text = Convert.ToString((int)(difference.Days / 365.25));
-            Months.Text = Convert.ToString((int)((difference.Days % 365.25) / 30.44));
+            Months.Text = Convert.ToString(Math.Round((int)((difference.Days % 365.25) / 30.44) - 0.6));
             Days.Text = Convert.ToString(difference.Days % 30);
                     flag = false;
                 }
