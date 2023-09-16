@@ -16,7 +16,7 @@
             <Setter Property="VerticalAlignment" Value="Center"/>
         </Style>
         <Style x:Key="RadioButtonStyle" TargetType="RadioButton">
-            <Setter Property="Margin" Value="70,20,0,0"/>
+            <Setter Property="Margin" Value="50,20,0,0"/>
             <Setter Property="FontSize" Value="15"/>
         </Style>
         <Style x:Key="DataStyle" TargetType="TextBlock">

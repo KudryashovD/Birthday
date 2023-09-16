@@ -22,6 +22,7 @@
             <RadioButton Style="{StaticResource RadioButtonStyle}" Click="RadioButtonTime_Click">Сколько времени прошло</RadioButton>
                 <RadioButton Style="{StaticResource RadioButtonStyle}" Click="RadioButtonDayOfWeek_Click">День недели</RadioButton>
                 <RadioButton Style="{StaticResource RadioButtonStyle}" Click="RadioButtonVisokosYear_Click">Високосные года</RadioButton>
+                <RadioButton Style="{StaticResource RadioButtonStyle}" Click="RadioButtonGoroscope">Гороскоп</RadioButton>
             </WrapPanel>
         </StackPanel>
         <StackPanel Grid.Row="2" Visibility="Collapsed" Name="Time">
@@ -55,5 +56,20 @@
             <Button Style="{StaticResource VisokosButtonStyle}" Click="ConkretVisokosYear">Какие года были високосными?</Button>
             <Button Style="{StaticResource VisokosButtonStyle}" Click="VisokosYearRepeat">Рассчитать</Button>
         </WrapPanel>
+        <StackPanel Grid.Row="2" Name="Goroscope" Visibility="Collapsed">
+            <ComboBox FontSize="20" SelectionChanged="ComboBoxGRSelectionChanged" Name="CBGoroscope">
+                <ComboBoxItem IsSelected="True" IsEnabled="False">Выберите нужный гороскоп</ComboBoxItem>
+                <ComboBoxItem>Славянский гороскоп</ComboBoxItem>
+                <ComboBoxItem>Восточный гороскоп</ComboBoxItem>
+            </ComboBox>
+        <StackPanel Grid.Row="2" Name="SlavianGR" Visibility="Collapsed">
+            <TextBlock Style="{StaticResource TextBoxStyle}">Славянский гороскоп</TextBlock>
+            <TextBlock Name="Slavian" Style="{StaticResource DataStyle}"></TextBlock>
+        </StackPanel>
+            <StackPanel Grid.Row="2" Name="EastGR" Visibility="Collapsed">
+                <TextBlock Style="{StaticResource TextBoxStyle}">Восточный гороскоп</TextBlock>
+                <TextBlock Name="East" Style="{StaticResource DataStyle}"></TextBlock>
+            </StackPanel>
+        </StackPanel>
     </Grid>
 </Window>
