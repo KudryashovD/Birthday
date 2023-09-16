@@ -163,9 +163,9 @@ namespace UserBirthday
                         if (DateTime.IsLeapYear(year))
                         {
                             MessageBox.Show("Високосный год " + year);
-                            flag = false;
                         }
                     }
+                    flag = false;
                 }
             }
         }
