@@ -4,7 +4,7 @@
 
 **Наше приложение:**
 
-![Начальный экран](image.png)
+![image](https://github.com/KudryashovD/Birthday/assets/132356538/a59f64b6-e089-4964-a32b-09bf604908b1)
 
 ## Описание нашего проекта
 **В нашем `приложении` вы сможете:**
@@ -17,27 +17,42 @@
 
 #### Если вы хотите узнать сколько времени прошло с момента вашего рождения вам нужно выполнить следующие шаги:
 1. Ввести `дату вашего рождения`;
+![image-1](https://github.com/KudryashovD/Birthday/assets/132356538/133ee71d-fc6e-4c32-853e-4e7e7e6f9320)
 2. Выбрать пункт `"Сколько времени прошло"`;
+![image-2](https://github.com/KudryashovD/Birthday/assets/132356538/98c77ce8-afe3-4b4e-91b7-588d8ff0a3ac)
 3. Нажать на кнопку `"Рассчитать"`.
+![image-3](https://github.com/KudryashovD/Birthday/assets/132356538/f5421347-ab81-4129-ba58-3d1d15199dae)
 
 #### Если вы хотите узнать в какой день недели вы родились и сколько раз вы праздновали ваш день рождения в этот день вам нужно выполнить следующие шаги:
 1. Ввести `дату вашего рождения`;
+![image-1](https://github.com/KudryashovD/Birthday/assets/132356538/57f1f1a6-80bb-4dbc-b0f1-31c0757b9fbe)
 2. Выбрать пункт `"День недели"`;
+![image-4](https://github.com/KudryashovD/Birthday/assets/132356538/13fbae47-d7cc-48a1-88da-1def98bfa26f)
 3. Нажать на кнопку `"Рассчитать"`.
-
+![image-5](https://github.com/KudryashovD/Birthday/assets/132356538/002d0448-a8a6-4d99-abd8-d2210dc36e32)
 #### Если вы хотите узнать сколько високосных годов прошло с момента вашего рождения и что это были за года вам нужно выполнить следующие шаги:
 1. Ввести `дату вашего рождения`;
+![image-1](https://github.com/KudryashovD/Birthday/assets/132356538/7cd3df00-5ef6-4418-9431-705d0d1d1dbb)
 2. Выбрать пункт `"Високосные года"`;
+![image-6](https://github.com/KudryashovD/Birthday/assets/132356538/05be01af-8b17-4772-a317-e3bd9447d6eb)
 3. Нажать на кнопку `"Рассчитать"`, если хотите узнать количество високосных годов;
+![image-7](https://github.com/KudryashovD/Birthday/assets/132356538/0320e256-e519-41b6-9709-4d674cbb6a23)
 4. Нажать на кнопку `"Какие года были високосными"`, если хотите узнать какие именно года были високосными.
-
+![image-8](https://github.com/KudryashovD/Birthday/assets/132356538/81ca4e3d-656a-4b64-bdd0-dfed211749fa)
 #### Если вы хотите узнать кто вы по восточному гороскопу вам нужно выполнить следующие шаги:
 1. Ввести `дату вашего рождения`;
+![image-1](https://github.com/KudryashovD/Birthday/assets/132356538/e22f460e-e029-4f36-a168-20a7237ef131)
 2. Выбрать пункт `"Гороскоп"` и выбрать в выпадающем списке `"Восточный гороскоп"`.
+![image-9](https://github.com/KudryashovD/Birthday/assets/132356538/a0dc23d9-0333-4bab-8270-d0f15b0e509c)
+![image-10](https://github.com/KudryashovD/Birthday/assets/132356538/cd7d72fd-b7dc-40cb-9d19-f8e96d4c77d7)
 
 #### Если вы хотите узнать кто вы по славянскому гороскопу вам нужно выполнить следующие шаги:
 1. Ввести `дату вашего рождения`;
+![image-1](https://github.com/KudryashovD/Birthday/assets/132356538/ad92397b-ef8b-4aeb-9513-2139182bec39)
 2. Выбрать пункт `"Гороскоп"` и выбрать в выпадающем списке `"Славянский гороскоп"`.
+![image-11](https://github.com/KudryashovD/Birthday/assets/132356538/05673516-64ab-4d49-99ad-3d57df5a39d5)
+![image-12](https://github.com/KudryashovD/Birthday/assets/132356538/14215ac8-534d-4fc8-8a28-c0407963c251)
+
 ## Технологии, использованные в проекте
 
 + В нашем проекте была использована среда разработки `Visual Studio`.
